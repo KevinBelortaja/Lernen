@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>I LOVE YOU</title>
+</head>
+<body>
+    <header>
+        <nav class="dropdown">
+            <button  onclick="myFunction()" class="dropbtn">Menü</button>
+            <ul id="myDropdown" class="dropdown-content">
+                <li><a class="dropdowna" href="home.html">Home</a></li>
+                <li><a class="dropdowna" href="favWords.html">Lieblingswörter</a></li>
+                <li><a class="dropdowna" href="funFacts.html">Fun Facts</a></li>
+                <li><a class="dropdowna" href="bitcoin.html">Bitcoins Geschichte</a></li>
+                <li><a class="dropdowna" href="surprise.html">Surprise</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <div id="homeheart">
+         <section id="heart">
+            <p>I <span class="heart"></span> you</p>
+            </section>   
+        </div>
+    </main>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+
+    <footer>
+        <p id="backToStart"><a href="../../index.html">Zurück zum Start</a></p>
+    </footer>
+</body>
+</html>
