@@ -225,14 +225,14 @@ caption {
 
 
 /* images */
-/*
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 15px;
 }
-
+/*
 .gallery__img {
     width: 100%;
     height: 100%;
@@ -369,7 +369,7 @@ caption {
     grid-row-start: 4;
     grid-row-end: 6; 
 }
-
+/*
 .gallery__item--0 {
     color: white;
     font-size: 17px;
@@ -382,8 +382,9 @@ caption {
     grid-row-start: 4;
     grid-row-end: 6; 
 }
-
+*/
 /* heart logo */
+/*
 .heart {
     background-color: red;
     display: inline-block;
@@ -425,8 +426,9 @@ caption {
 #homeheart {
     margin-top: 35vh;
 }
-
+*/
 /* loading animation */
+/*
 .lds-roller {
   display: inline-block;
   position: relative;
@@ -511,7 +513,7 @@ caption {
     transform: rotate(360deg);
   }
 }
-
+*/
 
 
 
@@ -531,9 +533,9 @@ caption {
 
 
 /* Iphone 6 */
-/*
+
 @media only screen and (max-device-width: 540px){
-    */
+    
     /* header/nav */
     /*
     .dropbtn {
@@ -651,14 +653,14 @@ caption {
     #backToStart {
         font-size: 25px;
     }
-
+*/
     .gallery {
         display: flex;
         justify-content: center;
         text-align: center;
         height: 70vh;
     }
-    
+/*
     .gallery {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -802,7 +804,7 @@ caption {
         grid-row-start: 1;
         grid-row-end: 5; 
     }
-
+*/
     .gallery__item--beginning {
         color: white;
         display: flex;
@@ -814,7 +816,7 @@ caption {
         grid-row-start: 10;
         grid-row-end: 20; 
     }
-
+/*
     .gallery__item--00 {
         color: white;
         display: flex;
