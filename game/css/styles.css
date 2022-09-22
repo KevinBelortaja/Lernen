@@ -369,7 +369,7 @@ caption {
     grid-row-start: 4;
     grid-row-end: 6; 
 }
-/*
+
 .gallery__item--0 {
     color: white;
     font-size: 17px;
@@ -382,9 +382,8 @@ caption {
     grid-row-start: 4;
     grid-row-end: 6; 
 }
-*/
+
 /* heart logo */
-/*
 .heart {
     background-color: red;
     display: inline-block;
@@ -426,9 +425,8 @@ caption {
 #homeheart {
     margin-top: 35vh;
 }
-*/
+
 /* loading animation */
-/*
 .lds-roller {
   display: inline-block;
   position: relative;
@@ -513,7 +511,7 @@ caption {
     transform: rotate(360deg);
   }
 }
-*/
+
 
 
 
