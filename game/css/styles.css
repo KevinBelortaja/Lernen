@@ -148,13 +148,7 @@ nav li a:hover {
     border: none;
     cursor: pointer;
 }
- 
-.dropdownbtnanswer2 {
-    padding: 7px 10px;
-    border-radius: 9px;
-    border: none;
-    cursor: pointer;
-}
+
 .dropdown-content {
     visibility: hidden;
     display: block;
@@ -551,6 +545,10 @@ caption {
 
     .randomquestion {
         height: 100vh;
+    }
+
+    .dropdownbtnanswer {
+        font-size: 20px;
     }
 
     /* header/nav */
