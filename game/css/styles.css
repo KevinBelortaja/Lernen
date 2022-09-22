@@ -539,6 +539,16 @@ caption {
         font-size: 40px;
         padding: 20px 50px;
     }
+
+    #randomqfield {
+        width: 70%;
+        max-width: 70%;
+        font-size: 50px;
+        padding: 50px;
+        margin-top: auto;
+        word-wrap: break-word;
+    }
+
     /* header/nav */
     /*
     .dropbtn {
