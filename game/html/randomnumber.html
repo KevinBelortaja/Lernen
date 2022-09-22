@@ -15,7 +15,7 @@
             </div>
 
             <button id="antwort" class="dropdownbtnanswer">Antwort</button>
-            <button class="dropdownbtnanswer2" onclick="randomizeFunction()">Nächste Frage</button>
+            <button class="dropdownbtnanswer" onclick="randomizeFunction()">Nächste Frage</button>
         </div>
     </main>
     
@@ -46,7 +46,7 @@
 
         // Close the dropdown if the user clicks outside of it
         window.onclick = function(event) {
-          if (!event.target.matches('.dropdownbtnanswer')) {
+          if (!event.target.matches('#antwort')) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
             var i;
             for (i = 0; i < dropdowns.length; i++) {
