@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>I LOVE YOU</title>
+</head>
+
+    <main class="randomquestion">
+        <div id="randomqfield">
+            <p id="question"></p>
+
+            <div id="myDropdown" class="dropdown-content">
+                <p id="answer"></p>
+            </div>
+
+            <button id="antwort" class="dropdownbtnanswer">Antwort</button>
+            <button class="dropdownbtnanswer2" onclick="randomizeFunction()">Nächste Frage</button>
+        </div>
+    </main>
+    
+
+
+    <script>
+        var months = ["January", "February", "March", "April", "May", "June", "July"];
+        var number = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
+
+        randomizeFunction()
+
+        //console.log(months[random] + number[random]);
+
+        function randomizeFunction() {
+            var random = Math.floor(Math.random() * months.length);
+
+            var uno = [months[random]];
+            var dos = [number[random]];
+            
+            document.getElementById("question").innerHTML = uno
+            document.getElementById("answer").innerHTML = dos
+        }
+
+        document.getElementById("antwort").onclick = function() {myFunction()};
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropdownbtnanswer')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+</html>
